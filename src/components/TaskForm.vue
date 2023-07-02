@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input type="text" v-model="newTask" />
-    <button @click="addTask">Add Task</button>
+    <input class='form-input' type="text" v-model="newTask" placeholder="Add a new task..."/>
+    <button class='add-btn' @click="addTask">Add</button>
   </div>
 </template>
 

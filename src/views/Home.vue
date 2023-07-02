@@ -11,7 +11,7 @@ import ToDoList from '@/components/ToDoList.vue'
 export default {
   name: 'Home',
   components: {
-    ToDoList
+    Home
   }
 }
 </script>

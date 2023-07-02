@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class='todo-item'>
     <label :class="{ completed: task.completed, editing: editing }">
       <input type="checkbox" :checked="task.completed" @change="toggleTask" />
       <span v-if="!editing" @click="startEdit">{{ task.title }}</span>
       <input type="text" v-model="editedTitle" v-if="editing" ref="inputField" />
     </label>
-    <button v-if="!editing" @click="startEdit">Edit</button>
+    <button class='' v-if="!editing" @click="startEdit">Edit</button>
     <button v-if="editing" @click="updateTask">Save</button>
     <button @click="deleteTask">Delete</button>
   </div>
